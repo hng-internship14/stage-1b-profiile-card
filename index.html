@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<main class="container">
+
+  <article class="profile-card" data-testid="test-profile-card">
+
+    <!-- HEADER -->
+    <header class="profile-header">
+      <figure class="avatar-box">
+        <img 
+          src="bio.PNG"
+          alt="Profile photo of Abdulahad Sheid"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="user-info">
+        <h2 data-testid="test-user-name">Abdulahad Sheid</h2>
+        <p data-testid="test-user-bio">
+          Frontend developer focused on building modern, accessible, and highly interactive web applications with clean UI/UX.
+        </p>
+      </div>
+    </header>
+
+    <!-- TIME -->
+    <div class="time-box">
+        <span>Current Time:</span>
+        <strong id="readable-time"></strong>
+    
+        <!-- required for tests -->
+        <span data-testid="test-user-time" id="time" style="display: none;"></span>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <nav class="socials" data-testid="test-user-social-links">
+      <a href="" target="_blank" rel="noopener noreferrer"
+         data-testid="test-user-social-twitter">Twitter</a>
+
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+         data-testid="test-user-social-github">GitHub</a>
+
+      <a href="" target="_blank" rel="noopener noreferrer"
+         data-testid="test-user-social-linkedin">LinkedIn</a>
+    </nav>
+
+    <!-- HOBBIES -->
+    <section class="list-section">
+      <h3>Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>UI Design</li>
+        <li>Gym Training</li>
+        <li>Reading Tech Blogs</li>
+      </ul>
+    </section>
+
+    <!-- DISLIKES -->
+    <section class="list-section">
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>Fish Skin</li>
+        <li>Wet Floor</li>
+        <li>Messy Code</li>
+      </ul>
+    </section>
+
+  </article>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

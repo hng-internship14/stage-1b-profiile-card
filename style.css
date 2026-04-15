@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #dfe6ee);
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+/* Card */
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Avatar */
+.avatar-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4caf50;
+}
+
+/* Info */
+.user-info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.user-info p {
+  margin-top: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Time */
+.time-box {
+  background: #f4f6f8;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Social Links */
+.socials {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  background: #4caf50;
+}
+
+/* Lists */
+.list-section h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.list-section ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.list-section li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Focus Accessibility */
+a:focus {
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .time-box {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
